@@ -1,0 +1,20 @@
+server:
+  port: 9001
+spring:
+  application:
+    name: dream-base
+  datasource:
+    driverClassName: com.mysql.jdbc.Driver  #driver-class-name
+    url: jdbc:mysql://192.168.81.136:3306/dream_user?useUnicode=true&characterEncoding=UTF8&useSSL=false
+    username: root
+    password: root
+  jpa:
+    database: mysql
+    show-sql: true
+    generate-ddl: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+  instance:
+    prefer-ip-address: true
