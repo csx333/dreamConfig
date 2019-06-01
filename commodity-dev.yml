@@ -1,0 +1,26 @@
+server: 
+  port: 9010
+spring: 
+  application:  
+    name: dream-goods #指定服务名
+  datasource:  
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.81.136:3306/dream_goods?characterEncoding=UTF8&useSSL=false
+    username: root
+    password: root
+  jpa: 
+    database: MySQL
+    show-sql: true
+  redis:
+    host: 192.168.81.136
+    port: 6379
+jwt:
+  config:
+    key: ustc
+    ttl: 360000000000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+  instance:
+    prefer-ip-address: true
