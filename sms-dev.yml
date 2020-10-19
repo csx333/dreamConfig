@@ -14,7 +14,7 @@ eureka:
     prefer-ip-address: true
 aliyun:
   sms:
-    accessKeyId: LTAIawZE0vDDFT4n
-    accessKeySecret: guYVF2XR5Nmvzw8GgSHhD4hRUjRMiI
+    accessKeyId: 
+    accessKeySecret: 
     template_code: SMS_166096302
     sign_name: 梦夕网中科大工程实践
